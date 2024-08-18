@@ -1,0 +1,56 @@
+{
+	"name": "aniapi",
+	"version": "0.0.0",
+	"description": "API wrapper over other APIs of Anime Services",
+	"author": "zetharionn",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"watch": "parcel watch",
+		"lint": "pnpm lint:prettier && pnpm lint:eslint",
+		"build": "parcel build",
+		"lint:prettier": "prettier ./src/**/*.ts --write",
+		"lint:eslint": "eslint ./src/**/*.ts --fix",
+		"prepare": "husky"
+	},
+	"source": "src/index.ts",
+	"main": "dist/index.cjs",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"homepage": "https://github.com/zetharionn/aniapi",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zetharionn/aniapi"
+	},
+	"bugs": {
+		"url": "https://github.com/zetharionn/aniapi/issues"
+	},
+	"keywords": [
+		"tracker",
+		"api",
+		"typescript",
+		"anime",
+		"parcel",
+		"anitrack"
+	],
+	"devDependencies": {
+		"@commitlint/config-conventional": "^19.2.2",
+		"@parcel/packager-ts": "2.12.0",
+		"@parcel/transformer-typescript-types": "2.12.0",
+		"@types/node": "^22.4.0",
+		"@typescript-eslint/eslint-plugin": "^8.1.0",
+		"@typescript-eslint/parser": "^8.1.0",
+		"commitlint": "^19.4.0",
+		"eslint": "8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-prettier": "^5.2.1",
+		"husky": "^9.1.4",
+		"lint-staged": "^15.2.9",
+		"parcel": "^2.12.0",
+		"prettier": "^3.3.3",
+		"typescript": "^5.5.4",
+		"vitest": "^2.0.5"
+	}
+}

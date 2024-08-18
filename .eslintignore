@@ -1,0 +1,15 @@
+node_modules
+public
+dist
+dist-ssr
+.parcel-cache
+*.local
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
