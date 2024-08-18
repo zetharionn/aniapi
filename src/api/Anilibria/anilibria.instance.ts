@@ -1,10 +1,13 @@
 import { IAnilibria } from './anilibria.types'
-import { Fetch, FetchModes } from './../../helpers'
+import { Fetch } from './../../helpers'
 import { Endpoints } from './constants'
+import { Title } from './types'
 
 export class Anilibria implements IAnilibria {
-	getTitle = async (id: number) => {
-		const response = await Fetch(Endpoints.TITLE + `?id=${id}`, FetchModes.JSON)
-		return response
+	getTitle = (id: number) => {
+		return Fetch<Title>(Endpoints.TITLE + `?id=${id}`)
+	}
+	getRandomTitle = () => {
+		return Fetch<Title>(Endpoints.RANDOM_TITLE)
 	}
 }
