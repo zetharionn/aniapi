@@ -9,7 +9,7 @@ import { Franchises } from './franchises'
 export interface Title {
 	id: number
 	code: string
-	name: Names
+	names: Names
 	posters: Posters
 	update: number
 	last_change: number
