@@ -4,10 +4,10 @@ import { Endpoints } from './constants'
 import { Title } from './types'
 
 export class Anilibria implements IAnilibria {
-	getTitle = (id: number) => {
+	getTitle(id: number) {
 		return Fetch<Title>(Endpoints.TITLE + `?id=${id}`)
 	}
-	getRandomTitle = () => {
+	getRandomTitle() {
 		return Fetch<Title>(Endpoints.RANDOM_TITLE)
 	}
 }
