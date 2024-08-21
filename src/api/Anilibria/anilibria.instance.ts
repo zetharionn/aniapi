@@ -7,6 +7,10 @@ import {
 	getAnilibriaTitle,
 	GetAnilibriaTitleParams
 } from './methods/getAnilibriaTitle'
+import {
+	getAnilibriaTitleList,
+	GetAnilibriaTitleListParams
+} from './methods/getAnilibriaTitleList'
 
 export class Anilibria implements IAnilibria {
 	getTitle(params: GetAnilibriaTitleParams) {
@@ -14,5 +18,8 @@ export class Anilibria implements IAnilibria {
 	}
 	getRandomTitle(params: GetAnilibriaRandomTitleParams) {
 		return getAnilibriaRandomTitle(params)
+	}
+	getTitleList(params: GetAnilibriaTitleListParams) {
+		return getAnilibriaTitleList(params)
 	}
 }
