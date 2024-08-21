@@ -1,1 +1,2 @@
-export { Fetch, FetchModes } from './Fetch'
+export * from './Fetch'
+export * from './Params'
