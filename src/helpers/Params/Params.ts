@@ -5,5 +5,5 @@ export const Params = <T extends object>(paramsObject: T): string => {
 			`${encodeURIComponent(key)}=${encodeURIComponent(String(value))}`
 		)
 	}
-	return `?${paramsString.join('&')}`
+	return paramsString.length > 1 ? `?${paramsString.join('&')}` : ''
 }

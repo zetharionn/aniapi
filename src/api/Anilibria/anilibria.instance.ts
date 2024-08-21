@@ -16,7 +16,7 @@ export class Anilibria implements IAnilibria {
 	getTitle(params: GetAnilibriaTitleParams) {
 		return getAnilibriaTitle(params)
 	}
-	getRandomTitle(params: GetAnilibriaRandomTitleParams) {
+	getRandomTitle(params?: GetAnilibriaRandomTitleParams) {
 		return getAnilibriaRandomTitle(params)
 	}
 	getTitleList(params: GetAnilibriaTitleListParams) {

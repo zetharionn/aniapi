@@ -4,9 +4,9 @@ import type { Title } from '../../types'
 import type { GetAnilibriaRandomTitleParams } from './getAnilibriaRandomTitle.types'
 
 export const getAnilibriaRandomTitle = async (
-	params: GetAnilibriaRandomTitleParams
+	params?: GetAnilibriaRandomTitleParams
 ) => {
 	return await Fetch<Title>(
-		Endpoints.RANDOM_TITLE + Params<GetAnilibriaRandomTitleParams>(params)
+		Endpoints.RANDOM_TITLE + Params<GetAnilibriaRandomTitleParams>(params ?? {})
 	)
 }
