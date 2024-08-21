@@ -30,14 +30,6 @@
 		"resolveJsonModule": true,
 
 		/* Javascript */
-		"allowJs": true,
-
-		/* Aliases */
-		"paths": {
-			"@/*": ["./src/*"],
-			"@api/*": ["./src/api/*"],
-			"@helpers/*": ["./src/helpers/*"],
-			"@helpers": ["./src/helpers"]
-		}
+		"allowJs": true
 	}
 }
