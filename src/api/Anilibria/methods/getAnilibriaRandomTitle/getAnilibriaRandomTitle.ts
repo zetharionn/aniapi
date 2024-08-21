@@ -1,4 +1,4 @@
-import { Fetch, Params } from '@helpers'
+import { Fetch, Params } from '../../../../helpers'
 import { Endpoints } from '../../constants'
 import type { Title } from '../../types'
 import type { GetAnilibriaRandomTitleParams } from './getAnilibriaRandomTitle.types'

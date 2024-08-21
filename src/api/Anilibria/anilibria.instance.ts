@@ -1,13 +1,18 @@
 import { IAnilibria } from './anilibria.types'
-import { Fetch } from './../../helpers'
-import { Endpoints } from './constants'
-import { Title } from './types'
+import {
+	getAnilibriaRandomTitle,
+	GetAnilibriaRandomTitleParams
+} from './methods/getAnilibriaRandomTitle'
+import {
+	getAnilibriaTitle,
+	GetAnilibriaTitleParams
+} from './methods/getAnilibriaTitle'
 
 export class Anilibria implements IAnilibria {
-	getTitle(id: number) {
-		return Fetch<Title>(Endpoints.TITLE + `?id=${id}`)
+	getTitle(params: GetAnilibriaTitleParams) {
+		return getAnilibriaTitle(params)
 	}
-	getRandomTitle() {
-		return Fetch<Title>(Endpoints.RANDOM_TITLE)
+	getRandomTitle(params: GetAnilibriaRandomTitleParams) {
+		return getAnilibriaRandomTitle(params)
 	}
 }

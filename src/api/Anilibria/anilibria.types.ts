@@ -1,6 +1,8 @@
+import { GetAnilibriaRandomTitleParams } from './methods/getAnilibriaRandomTitle'
+import { GetAnilibriaTitleParams } from './methods/getAnilibriaTitle'
 import { Title } from './types'
 
 export interface IAnilibria {
-	getTitle: (id: number) => Promise<Title>
-	getRandomTitle: () => Promise<Title>
+	getTitle: (params: GetAnilibriaTitleParams) => Promise<Title>
+	getRandomTitle: (params: GetAnilibriaRandomTitleParams) => Promise<Title>
 }

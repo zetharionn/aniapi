@@ -1,4 +1,4 @@
-export { Anilibria, Endpoints, URL } from './api/Anilibria'
+export { Anilibria } from './api/Anilibria'
 export type {
 	IAnilibria,
 	Title,
