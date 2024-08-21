@@ -15,6 +15,7 @@ dist-ssr
 .parcel-cache
 .git
 .husky
+docs
 src
 tests
 **/.*ignore
