@@ -1,6 +1,8 @@
 # Table of contents
 
-* [docs](README.md)
-  * [Welcome](docs/welcome.md)
-  * [Home](Home.md)
-* [README](../README.md)
+* [Overview](README.md)
+* [Supported APIs](supported-apis.md)
+
+## Getting Started
+
+* [Installation](getting-started/installation.md)
