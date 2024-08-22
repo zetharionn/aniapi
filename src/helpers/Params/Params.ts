@@ -1,9 +1,12 @@
-export const Params = <T extends object>(paramsObject: T): string => {
-	const paramsString: string[] = []
-	for (const [key, value] of Object.entries(paramsObject)) {
-		paramsString.push(
-			`${encodeURIComponent(key)}=${encodeURIComponent(String(value))}`
-		)
+export const Params = <T extends object>(paramsObject?: T): string => {
+	if (paramsObject) {
+		const paramsString: string[] = []
+		for (const [key, value] of Object.entries(paramsObject)) {
+			paramsString.push(
+				`${encodeURIComponent(key)}=${encodeURIComponent(String(value))}`
+			)
+		}
+		return `?${paramsString.join('&')}`
 	}
-	return paramsString.length > 1 ? `?${paramsString.join('&')}` : ''
+	return ''
 }

@@ -4,7 +4,7 @@ import { Title } from '../../types'
 import { GetAnilibriaSearchTitleParams } from './getAnilibriaSearchTitle.types'
 
 export const getAnilibriaSearchTitle = (
-	params: GetAnilibriaSearchTitleParams
+	params?: GetAnilibriaSearchTitleParams
 ) => {
 	return Fetch<Title[]>(
 		Endpoints.SEARCH_TITLE + Params<GetAnilibriaSearchTitleParams>(params)
