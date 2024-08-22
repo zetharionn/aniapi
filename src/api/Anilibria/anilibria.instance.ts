@@ -4,6 +4,10 @@ import {
 	GetAnilibriaRandomTitleParams
 } from './methods/getAnilibriaRandomTitle'
 import {
+	getAnilibriaSearchTitle,
+	GetAnilibriaSearchTitleParams
+} from './methods/getAnilibriaSearchTitle'
+import {
 	getAnilibriaTitle,
 	GetAnilibriaTitleParams
 } from './methods/getAnilibriaTitle'
@@ -21,5 +25,8 @@ export class Anilibria implements IAnilibria {
 	}
 	getTitleList(params: GetAnilibriaTitleListParams) {
 		return getAnilibriaTitleList(params)
+	}
+	getSearchTitle(params: GetAnilibriaSearchTitleParams) {
+		return getAnilibriaSearchTitle(params)
 	}
 }
