@@ -14,13 +14,7 @@ layout:
 
 # Installation
 
-## Navigation
-
-[#requirements](installation.md#requirements "mention")
-
-[#installation-package](installation.md#installation-package "mention")
-
-[#afterword](installation.md#afterword "mention")
+***
 
 ## Requirements
 
@@ -29,26 +23,28 @@ layout:
 
 That's all, let's get started
 
+***
+
 ## Installation Package
 
-
+Use one of the following package managers:
 
 {% tabs %}
 {% tab title="pnpm" %}
 ```
-pnpm add aniapi
+pnpm add aniapi@latest
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```
-yarn add aniapi
+yarn add aniapi@latest
 ```
 {% endtab %}
 
 {% tab title="npm" %}
 ```
-npm install aniapi
+npm install aniapi@latest
 ```
 {% endtab %}
 
@@ -57,6 +53,4 @@ Coming soon...
 {% endtab %}
 {% endtabs %}
 
-## Afterword
-
-Thanks for installing my first library!
+***
