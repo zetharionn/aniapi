@@ -3,10 +3,10 @@ import { Endpoints } from '../../constants'
 import type { Title } from '../../types'
 import type { GetAnilibriaRandomTitleParams } from './getAnilibriaRandomTitle.types'
 
-export const getAnilibriaRandomTitle = async (
-	params?: GetAnilibriaRandomTitleParams
+export const getAnilibriaRandomTitle = (
+	params: GetAnilibriaRandomTitleParams
 ) => {
-	return await Fetch<Title>(
-		Endpoints.RANDOM_TITLE + Params<GetAnilibriaRandomTitleParams>(params ?? {})
+	return Fetch<Title>(
+		Endpoints.RANDOM_TITLE + Params<GetAnilibriaRandomTitleParams>(params)
 	)
 }
