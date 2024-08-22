@@ -17,16 +17,16 @@ import {
 } from './methods/getAnilibriaTitleList'
 
 export class Anilibria implements IAnilibria {
-	getTitle(params: GetAnilibriaTitleParams) {
+	public getTitle(params: GetAnilibriaTitleParams) {
 		return getAnilibriaTitle(params)
 	}
-	getRandomTitle(params?: GetAnilibriaRandomTitleParams) {
+	public getRandomTitle(params: GetAnilibriaRandomTitleParams) {
 		return getAnilibriaRandomTitle(params)
 	}
-	getTitleList(params: GetAnilibriaTitleListParams) {
+	public getTitleList(params: GetAnilibriaTitleListParams) {
 		return getAnilibriaTitleList(params)
 	}
-	getSearchTitle(params: GetAnilibriaSearchTitleParams) {
+	public getSearchTitle(params: GetAnilibriaSearchTitleParams) {
 		return getAnilibriaSearchTitle(params)
 	}
 }
