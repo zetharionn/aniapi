@@ -4,14 +4,16 @@ import { Status } from './status'
 import { Type } from './type'
 import { Team } from './team'
 import { Season } from './season'
-import { Franchises } from './franchises'
+import { Blocked } from './blocked'
+import { Description } from './description'
+import { Player } from './player'
 
 export interface Title {
 	id: number
 	code: string
 	names: Names
 	posters: Posters
-	update: number
+	updated: number
 	last_change: number
 	status: Status
 	type: Type
@@ -20,6 +22,9 @@ export interface Title {
 	season: Season
 	year: number
 	week_day: number
-	description: string
-	franchises: Franchises
+	description: Description
+	blocked: Blocked
+	player: Player
 }
+
+export type Titles = Title[]

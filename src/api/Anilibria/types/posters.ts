@@ -6,5 +6,5 @@ export interface Posters {
 
 export interface Poster {
 	url: string
-	raw_base64_file?: string
+	raw_base64_file: string
 }
