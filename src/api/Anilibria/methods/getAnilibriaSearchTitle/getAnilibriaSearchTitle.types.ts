@@ -1,20 +1,15 @@
-import { Season } from '../../types'
-
 export interface GetAnilibriaSearchTitleParams {
-	search?: string[]
-	year?: string[]
-	type?: string[]
-	season_code?: Season
-	genres?: string[]
-	team?: string[]
-	voice?: string[]
-	translator?: string[]
-	editing?: string[]
-	decor?: string[]
-	timing?: string[]
-	filter?: string[]
-	remove?: string[]
-	include?: string[]
+	search?: string
+	year?: string
+	season_code?: number
+	genres?: string
+	team?: string
+	voice?: string
+	type?: string
+	filter?: string
+	remove?: string
+	include?: string
+	description_type?: 'html' | 'plain' | 'no_view_order'
 	playlist_type?: 'object' | 'array'
 	limit?: number
 	after?: number
