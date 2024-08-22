@@ -14,8 +14,6 @@ layout:
 
 # Introduction
 
-***
-
 ## Create instance
 
 I recommend create in your project `instance.ts` with following code:
@@ -27,5 +25,3 @@ export const anilibria = new Anilibria();
 ```
 
 Next, import this instance into the files where the **Anilibria API** is used and use the methods.
-
-***

@@ -14,26 +14,40 @@ layout:
 
 # Overview
 
-***
+<div>
 
-## Overview
+<figure><img src="https://img.shields.io/npm/dm/aniapi?style=for-the-badge" alt=""><figcaption></figcaption></figure>
 
-[AniAPI](https://github.com/zetharionn/aniapi) is a **lightweight** API wrapper over other Anime Services APIs.
+ 
 
-***
+<figure><img src="https://img.shields.io/npm/v/aniapi?style=for-the-badge" alt=""><figcaption></figcaption></figure>
 
-## For what?
+ 
 
-[AniAPI](https://github.com/zetharionn/aniapi) is needed for conveniently sending requests to other APIs of Anime Services. This **speeds up development**, but **does not take up much space** in the final bundle.
+<figure><img src="https://img.shields.io/bundlejs/size/aniapi?style=for-the-badge" alt=""><figcaption></figcaption></figure>
 
-***
+</div>
 
-## Origin
+## About
 
-Initially, this library was created for [AniTrack](https://github.com/zetharionn/anitrack) in order to conveniently receive information from various APIs of other anime services. Later, I decided to transfer the library to an independent library so that everyone could use it and not be dependent on the [AniTrack](https://github.com/zetharionn/anitrack) API, but development is still carried out specifically for [AniTrack](https://github.com/zetharionn/anitrack), because this is my main project. Thanks for understanding!
+AniAPI is **open-source** **lightweight** API wrapper over other APIs of Anime Services. AniAPI **speeds up** development **without** sacrificing performance.
 
-***
+## Links
+
+* [GitHub Repository](https://github.com/zetharionn/aniapi)
+* [NPM Registry](https://www.npmjs.com/package/aniapi)
+* [Documentation](https://zetharionn.gitbook.io/aniapi-docs)
+* [Discord Server](https://discord.gg/6XzY6uNqUB)
+
+## Contributing
+
+Before creating an issue, make sure it hasn't been reported/suggested yet, check the [documentation](https://zetharionn.gitbook.io/aniapi-docs), [Google it](https://www.google.com/). If you still haven't found a solution, create an issue on the [GitHub Repository](https://github.com/zetharionn/aniapi).
+
+## Help
+
+If you have any problems related to AniAPI, do not hesitate to ask on [Discord Server](https://discord.gg/6XzY6uNqUB).
 
 ## License
 
-Coming soon...
+[Zetharion](https://github.com/zetharionn) does not claim all copyrights and related rights of the API used. This project is **open source** and uses the [MIT License](../LICENSE). If you notice a violation of the policy of the API used, please contact [Zetharion](https://github.com/zetharionn).
+

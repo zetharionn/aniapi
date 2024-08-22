@@ -14,16 +14,14 @@ layout:
 
 # Installation
 
-***
-
 ## Requirements
 
-* [Node.js](https://nodejs.org/) 18.20.4 or later
+* [Node.js](https://nodejs.org/)
 * [PNPM](https://pnpm.io/)/[Yarn](https://yarnpkg.com/) (Optional)
 
-That's all, let's get started
-
-***
+{% hint style="warning" %}
+To use AniAPI you will need Node.js version at least 18.x.
+{% endhint %}
 
 ## Installation Package
 
@@ -52,5 +50,3 @@ npm install aniapi@latest
 Coming soon...
 {% endtab %}
 {% endtabs %}
-
-***
