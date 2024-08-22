@@ -2,17 +2,19 @@ export { Anilibria } from './api/Anilibria'
 export type {
 	IAnilibria,
 	Title,
+	Titles,
 	Names,
-	Franchises,
-	Franchise,
 	Posters,
 	Poster,
-	Release,
-	Season,
-	SeasonCode,
 	Status,
-	StatusCodes,
-	Team,
 	Type,
-	TypeCodes
+	Team,
+	Season,
+	Description,
+	Blocked,
+	Player,
+	PlayerList,
+	Episodes,
+	Skips,
+	Hls
 } from './api/Anilibria'
