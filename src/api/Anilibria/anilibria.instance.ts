@@ -1,8 +1,8 @@
 import type { IAnilibria } from './anilibria.types'
 import {
-	anilibriaRandomRelease,
-	AnilibriaRandomReleaseParams
-} from './methods/anilibriaRandomRelease'
+	anilibriaRandom,
+	AnilibriaRandomParams
+} from './methods/anilibriaRandom'
 import {
 	anilibriaSearch,
 	AnilibriaSearchParams
@@ -16,8 +16,8 @@ export class Anilibria implements IAnilibria {
 	public release(params: AnilibriaReleaseParams) {
 		return anilibriaRelease(params)
 	}
-	public randomRelease(params?: AnilibriaRandomReleaseParams) {
-		return anilibriaRandomRelease(params)
+	public randomRelease(params?: AnilibriaRandomParams) {
+		return anilibriaRandom(params)
 	}
 	public searchRelease(params: AnilibriaSearchParams) {
 		return anilibriaSearch(params)
