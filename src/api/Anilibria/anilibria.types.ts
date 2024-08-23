@@ -1,12 +1,10 @@
-import { GetAnilibriaRandomTitleParams } from './methods/getAnilibriaRandomTitle'
-import { GetAnilibriaTitleParams } from './methods/getAnilibriaTitle'
-import { GetAnilibriaTitleListParams } from './methods/getAnilibriaTitleList'
-import { Title, Titles } from './types'
-import { GetAnilibriaSearchTitleParams } from './methods/getAnilibriaSearchTitle/getAnilibriaSearchTitle.types'
+import type { AnilibriaRandomReleaseParams } from './methods/anilibriaRandomRelease'
+import type { AnilibriaReleaseParams } from './methods/anilibriaRelease'
+import type { AnilibriaSearchParams } from './methods/anilibriaSearch'
+import type { Release } from './types'
 
 export interface IAnilibria {
-	getTitle: (params?: GetAnilibriaTitleParams) => Promise<Title>
-	getRandomTitle: (params?: GetAnilibriaRandomTitleParams) => Promise<Title>
-	getTitleList: (params?: GetAnilibriaTitleListParams) => Promise<Titles>
-	getSearchTitle: (params?: GetAnilibriaSearchTitleParams) => Promise<Titles>
+	release: (params: AnilibriaReleaseParams) => Promise<Release>
+	randomRelease: (params?: AnilibriaRandomReleaseParams) => Promise<Release>
+	searchRelease: (params: AnilibriaSearchParams) => Promise<Release[]>
 }

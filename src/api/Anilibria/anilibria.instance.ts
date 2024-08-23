@@ -1,32 +1,25 @@
-import { IAnilibria } from './anilibria.types'
+import type { IAnilibria } from './anilibria.types'
 import {
-	getAnilibriaRandomTitle,
-	GetAnilibriaRandomTitleParams
-} from './methods/getAnilibriaRandomTitle'
+	anilibriaRandomRelease,
+	AnilibriaRandomReleaseParams
+} from './methods/anilibriaRandomRelease'
 import {
-	getAnilibriaSearchTitle,
-	GetAnilibriaSearchTitleParams
-} from './methods/getAnilibriaSearchTitle'
+	anilibriaSearch,
+	AnilibriaSearchParams
+} from './methods/anilibriaSearch'
 import {
-	getAnilibriaTitle,
-	GetAnilibriaTitleParams
-} from './methods/getAnilibriaTitle'
-import {
-	getAnilibriaTitleList,
-	GetAnilibriaTitleListParams
-} from './methods/getAnilibriaTitleList'
+	anilibriaRelease,
+	AnilibriaReleaseParams
+} from './methods/anilibriaRelease'
 
 export class Anilibria implements IAnilibria {
-	public getTitle(params?: GetAnilibriaTitleParams) {
-		return getAnilibriaTitle(params)
+	public release(params: AnilibriaReleaseParams) {
+		return anilibriaRelease(params)
 	}
-	public getRandomTitle(params?: GetAnilibriaRandomTitleParams) {
-		return getAnilibriaRandomTitle(params)
+	public randomRelease(params?: AnilibriaRandomReleaseParams) {
+		return anilibriaRandomRelease(params)
 	}
-	public getTitleList(params?: GetAnilibriaTitleListParams) {
-		return getAnilibriaTitleList(params)
-	}
-	public getSearchTitle(params?: GetAnilibriaSearchTitleParams) {
-		return getAnilibriaSearchTitle(params)
+	public searchRelease(params: AnilibriaSearchParams) {
+		return anilibriaSearch(params)
 	}
 }
