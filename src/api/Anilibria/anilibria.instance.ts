@@ -16,10 +16,10 @@ export class Anilibria implements IAnilibria {
 	public release(params: AnilibriaReleaseParams) {
 		return anilibriaRelease(params)
 	}
-	public randomRelease(params?: AnilibriaRandomParams) {
+	public random(params?: AnilibriaRandomParams) {
 		return anilibriaRandom(params)
 	}
-	public searchRelease(params: AnilibriaSearchParams) {
+	public search(params: AnilibriaSearchParams) {
 		return anilibriaSearch(params)
 	}
 }
