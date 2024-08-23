@@ -1,5 +1,5 @@
 export interface Names {
-	ru: string
-	en: string
+	main: string
+	english: string
 	alternative: string
 }
