@@ -4,7 +4,7 @@ import type { Release } from '../../types'
 import type { AnilibriaReleaseParams } from './anilibriaRelease.types'
 
 export const anilibriaRelease = (params: AnilibriaReleaseParams) => {
-	return Fetch<Release[]>(
+	return Fetch<Release>(
 		Endpoints.RELEASE +
 			QueryParams<AnilibriaReleaseParams>(params, QueryParamsModes.PARAMS)
 	)
