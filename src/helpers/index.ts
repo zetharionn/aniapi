@@ -1,2 +1,2 @@
 export * from './Fetch'
-export * from './Params'
+export * from './QueryParams'
