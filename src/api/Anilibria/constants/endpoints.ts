@@ -6,7 +6,7 @@ export const enum Endpoints {
 	ANIME = URI.ANILIBRIA_API_URI + '/anime',
 	GENRES = ANIME + '/genres',
 	GENRES_RANDOM = GENRES + '/random',
-	RELEASE = ANIME + '/release',
+	RELEASE = ANIME + '/releases',
 	RELEASE_LATEST = RELEASE + '/latest',
 	RELEASE_RANDOM = RELEASE + '/random',
 	RELEASE_EPISODES = RELEASE + '/episodes',
