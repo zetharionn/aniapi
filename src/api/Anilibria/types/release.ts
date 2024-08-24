@@ -9,7 +9,7 @@ export interface Release {
 	id: number
 	type: Type
 	year: number
-	names: Names
+	name: Names
 	alias: string
 	season: Season
 	poster: Image
