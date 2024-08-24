@@ -14,4 +14,4 @@ layout:
 
 # Methods
 
-Methods of the `Anilibria` class
+Methods of the `Anilibria` class.
