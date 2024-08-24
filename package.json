@@ -1,6 +1,6 @@
 {
 	"name": "aniapi",
-	"version": "0.3.2",
+	"version": "0.3.3",
 	"description": "API wrapper over other APIs of Anime Services",
 	"author": "zetharionn",
 	"license": "MIT",
