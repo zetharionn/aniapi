@@ -14,30 +14,24 @@ layout:
 
 # Release
 
+## Create a new user
+
 `Release` Interface describing the release object.
 
-## Properties
-
-<table data-full-width="false"><thead><tr><th>Property</th><th>Type</th></tr></thead><tbody><tr><td>id</td><td>number</td></tr><tr><td>type</td><td><a href="type.md">Type</a></td></tr><tr><td>year</td><td>number</td></tr><tr><td>name</td><td><a href="names.md">Names</a></td></tr><tr><td>alias</td><td>string</td></tr><tr><td>season</td><td><a href="season.md">Season</a></td></tr><tr><td>poster</td><td><a href="image.md">Image</a></td></tr><tr><td>fresh_at</td><td>string</td></tr><tr><td>created_at</td><td>string</td></tr><tr><td>updated_at</td><td>string</td></tr><tr><td>is_ongoing</td><td>boolean</td></tr><tr><td>age_rating</td><td><a href="age_rating.md">Age_Rating</a></td></tr><tr><td>publish_day</td><td><a href="publish_day.md">Publish_Day</a></td></tr><tr><td>description</td><td>string</td></tr><tr><td>notification</td><td>string</td></tr><tr><td>episodes_total</td><td>number</td></tr><tr><td>external_player</td><td>string</td></tr><tr><td>is_in_production</td><td>boolean</td></tr><tr><td>is_blocked_by_geo</td><td>boolean</td></tr><tr><td>episodes_are_unknown</td><td>boolean</td></tr><tr><td>is_blocked_by_copyrights</td><td>boolean</td></tr><tr><td>average_duration_of_episode</td><td>number</td></tr></tbody></table>
-
-## Code
-
-{% code overflow="wrap" lineNumbers="true" %}
-```typescript
-interface Release {
+<pre class="language-typescript" data-overflow="wrap" data-line-numbers><code class="lang-typescript">interface Release {
 	id: number
-	type: Type
+	type: <a data-footnote-ref href="#user-content-fn-1">Type</a>
 	year: number
-	name: Names
+	name: <a data-footnote-ref href="#user-content-fn-2">Names</a>
 	alias: string
-	season: Season
-	poster: Image
+	season: <a data-footnote-ref href="#user-content-fn-3">Season</a>
+	poster: <a data-footnote-ref href="#user-content-fn-4">Image</a>
 	fresh_at: string
 	created_at: string
 	updated_at: string
 	is_ongoing: boolean
-	age_rating: Age_Rating
-	publish_day: Publish_Day
+	age_rating: <a data-footnote-ref href="#user-content-fn-5">Age_Rating</a>
+	publish_day: <a data-footnote-ref href="#user-content-fn-6">Publish_Day</a>
 	description: string
 	notification: string
 	episodes_total: number
@@ -48,5 +42,62 @@ interface Release {
 	is_blocked_by_copyrights: boolean
 	average_duration_of_episode: number
 }
-```
-{% endcode %}
+</code></pre>
+
+[^1]: [Type Interface](type.md)
+
+    ```typescript
+    export interface Type {
+    	value: string
+    	description: string
+    }
+    ```
+
+[^2]: [Names Interface](names.md)
+
+    ```typescript
+    export interface Names {
+    	main: string
+    	english: string
+    	alternative: string
+    }
+    ```
+
+[^3]: [Season Interface](season.md)
+
+    ```typescript
+    export interface Season {
+    	value: string
+    	description: string
+    }
+    ```
+
+[^4]: [Image Interface](image.md)
+
+    ```typescript
+    export interface Image {
+    	src: string
+    	thumbnail: string
+    	optimized: Omit<Image, 'optimized'>
+    }
+    ```
+
+[^5]: [Age\_Rating Interface](age\_rating.md)
+
+    ```typescript
+    export interface Age_Rating {
+    	value: string
+    	label: string
+    	is_adult: boolean
+    	description: string
+    }
+    ```
+
+[^6]: [Publish\_Day Interface](publish\_day.md)
+
+    ```typescript
+    export interface Publish_Day {
+    	value: string
+    	description: string
+    }
+    ```
