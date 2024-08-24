@@ -17,7 +17,7 @@ layout:
 ## Requirements
 
 * [Node.js](https://nodejs.org/)
-* [PNPM](https://pnpm.io/)/[Yarn](https://yarnpkg.com/) (Optional)
+* [PNPM](https://pnpm.io/)/[Yarn](https://yarnpkg.com/)/[Bun](https://bun.sh/) (Optional)
 
 {% hint style="warning" %}
 To use AniAPI you will need Node.js version at least 18.x.
@@ -40,13 +40,15 @@ yarn add aniapi@latest
 ```
 {% endtab %}
 
+{% tab title="bun" %}
+```
+bun add aniapi@latest
+```
+{% endtab %}
+
 {% tab title="npm" %}
 ```
 npm install aniapi@latest
 ```
-{% endtab %}
-
-{% tab title="bun" %}
-Coming soon...
 {% endtab %}
 {% endtabs %}
