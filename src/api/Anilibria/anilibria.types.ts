@@ -4,7 +4,7 @@ import type { AnilibriaSearchParams } from './methods/anilibriaSearch'
 import type { Release } from './types'
 
 export interface IAnilibria {
-	release: (params: AnilibriaReleaseParams) => Promise<Release>
-	random: (params?: AnilibriaRandomParams) => Promise<Release>
+	release: (params: AnilibriaReleaseParams) => Promise<Release[]>
+	random: (params?: AnilibriaRandomParams) => Promise<Release[]>
 	search: (params: AnilibriaSearchParams) => Promise<Release[]>
 }

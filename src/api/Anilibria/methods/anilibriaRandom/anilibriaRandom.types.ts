@@ -1,3 +1,5 @@
-export interface AnilibriaRandomParams {
-	limit?: number
+import { QueryParamsObject } from '../../../../helpers'
+
+export interface AnilibriaRandomParams extends QueryParamsObject {
+	limit: number
 }
