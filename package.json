@@ -8,11 +8,15 @@
 	"scripts": {
 		"watch": "parcel watch",
 		"lint": "pnpm lint:prettier && pnpm lint:eslint",
-		"build": "parcel build",
 		"lint:prettier": "prettier ./src/**/*.ts --write",
 		"lint:eslint": "eslint ./src/**/*.ts --fix",
+		"build": "parcel build",
+		"changeset": "changeset",
+		"changeset:version": "changeset version",
+		"changeset:publish": "changeset publish",
 		"prepare": "husky"
 	},
+	"packageManager": "pnpm@9.9.0",
 	"source": "src/index.ts",
 	"main": "dist/index.cjs",
 	"module": "dist/index.mjs",
