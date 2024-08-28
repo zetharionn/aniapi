@@ -1,13 +1,32 @@
-name: CD
+name: Pipeline
 on:
-  workflow_run:
-    workflows: ['CI']
-    types:
-      - completed
-    branches:
-      - main
+  - push
 jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.9.0
+      - name: Install dependencies with frozen lockfile
+        run: pnpm install --frozen-lockfile
+      - name: Lint code
+        run: pnpm lint
+      - name: Run Tests
+        run: pnpm test
   cd:
+    needs: ci
     name: CD
     runs-on: ubuntu-latest
     permissions:
