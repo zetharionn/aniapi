@@ -1,11 +1,14 @@
-name: Publish
+name: CD
 on:
-  push:
+  workflow_run:
+    workflows: ['CI']
+    types:
+      - completed
     branches:
       - main
 jobs:
-  publish:
-    name: Publish
+  cd:
+    name: CD
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -27,15 +30,13 @@ jobs:
           version: 9.9.0
       - name: Install dependencies with frozen lockfile
         run: pnpm install --frozen-lockfile
-      - name: Lint code
-        run: pnpm lint
       - name: Build
         run: pnpm build
       - name: Changeset Actions
         id: changesets
         uses: changesets/action@v1
         with:
-          commit: 'ci: version'
+          commit: 'cd: version'
           version: pnpm changeset:version
           publish: pnpm changeset:publish
         env:
