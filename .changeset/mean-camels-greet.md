@@ -1,0 +1,5 @@
+---
+'aniapi': minor
+---
+
+anilibriaLatest method
