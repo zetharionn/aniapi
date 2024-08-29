@@ -1,5 +1,11 @@
 # aniapi
 
+## 0.6.0
+
+### Minor Changes
+
+- c58dbbf: deps version audit
+
 ## 0.5.1
 
 ### Patch Changes
