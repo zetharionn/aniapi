@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"watch": "parcel watch",
+		"dev": "parcel watch",
 		"lint": "pnpm lint:prettier && pnpm lint:eslint",
 		"lint:prettier": "prettier ./src/**/*.ts --write",
 		"lint:eslint": "eslint ./src/**/*.ts --fix",
