@@ -4,6 +4,8 @@ import { Season } from './season'
 import { Age_Rating } from './age_rating'
 import { Publish_Day } from './publish_day'
 import { Image } from './image'
+import { Episode } from './episode'
+import { Genre } from './genre'
 
 export interface Release {
 	id: number
@@ -28,4 +30,6 @@ export interface Release {
 	episodes_are_unknown: boolean
 	is_blocked_by_copyrights: boolean
 	average_duration_of_episode: number
+	genres: Genre[]
+	episodes: Episode[]
 }
