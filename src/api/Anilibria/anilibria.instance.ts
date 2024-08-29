@@ -11,6 +11,10 @@ import {
 	anilibriaRelease,
 	AnilibriaReleaseParams
 } from './methods/anilibriaRelease'
+import {
+	anilibriaLatest,
+	AnilibriaLatestParams
+} from './methods/anilibriaLatest'
 
 export class Anilibria implements IAnilibria {
 	public release(params: AnilibriaReleaseParams) {
@@ -21,5 +25,8 @@ export class Anilibria implements IAnilibria {
 	}
 	public search(params: AnilibriaSearchParams) {
 		return anilibriaSearch(params)
+	}
+	public latest(params?: AnilibriaLatestParams) {
+		return anilibriaLatest(params)
 	}
 }
