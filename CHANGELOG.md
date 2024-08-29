@@ -1,5 +1,11 @@
 # aniapi
 
+## 0.5.0
+
+### Minor Changes
+
+- fad9493: anilibriaLatest method
+
 ## 0.4.1
 
 ### Patch Changes
