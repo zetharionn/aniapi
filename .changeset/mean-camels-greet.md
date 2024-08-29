@@ -1,5 +1,0 @@
----
-'aniapi': minor
----
-
-anilibriaLatest method
