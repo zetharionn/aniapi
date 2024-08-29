@@ -14,7 +14,7 @@ layout:
 
 # release
 
-The `Anilibria.relese()` is an `Anilibria` method that must accept an `aliasOrId` argument of type `string | number` and returns an object of type `Release`.
+The `Anilibria.relese()` is a method that must accept an `aliasOrId` argument of type `string | number` and returns an object of type [`Release`](../types/release.md).
 
 ## Usage
 
@@ -25,10 +25,6 @@ The `Anilibria.relese()` is an `Anilibria` method that must accept an `aliasOrId
 
 ## Parameters
 
-| Parameter   | Type               | IsRequired |
-| ----------- | ------------------ | ---------- |
-| `aliasOrId` | `string \| number` | `true`     |
-
-## Return
-
-Returns an object of type `Release`
+| Parameter   | Type               | Is Required |
+| ----------- | ------------------ | ----------- |
+| `aliasOrId` | `string \| number` | `true`      |

@@ -14,7 +14,7 @@ layout:
 
 # random
 
-The `Anilibria.random()` is an `Anilibria` method that optionally takes an argument `limit` of type `string | number` and returns an object of type `Release[]`.
+The `Anilibria.random()` is a method that optionally takes an argument `limit` of type `string | number` and returns an object of type [`Release`](../types/release.md)`[]`.
 
 ## Usage
 
@@ -28,10 +28,6 @@ anilibria.random({
 
 ## Parameters
 
-| Parameter | Type     | IsRequired |
-| --------- | -------- | ---------- |
-| `limit`   | `number` | `false`    |
-
-## Return
-
-Returns an array of `Release` type objects.
+| Parameter | Type     | Is Required |
+| --------- | -------- | ----------- |
+| `limit`   | `number` | `false`     |

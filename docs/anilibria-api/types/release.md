@@ -41,13 +41,15 @@ layout:
 	episodes_are_unknown: boolean
 	is_blocked_by_copyrights: boolean
 	average_duration_of_episode: number
+	genres: <a data-footnote-ref href="#user-content-fn-7">Genre</a>[]
+	episodes: <a data-footnote-ref href="#user-content-fn-8">Episode</a>[]
 }
 </code></pre>
 
 [^1]: [Type Interface](type.md)
 
     ```typescript
-    export interface Type {
+    interface Type {
     	value: string
     	description: string
     }
@@ -56,7 +58,7 @@ layout:
 [^2]: [Names Interface](names.md)
 
     ```typescript
-    export interface Names {
+    interface Names {
     	main: string
     	english: string
     	alternative: string
@@ -66,7 +68,7 @@ layout:
 [^3]: [Season Interface](season.md)
 
     ```typescript
-    export interface Season {
+    interface Season {
     	value: string
     	description: string
     }
@@ -75,7 +77,7 @@ layout:
 [^4]: [Image Interface](image.md)
 
     ```typescript
-    export interface Image {
+    interface Image {
     	src: string
     	thumbnail: string
     	optimized: Omit<Image, 'optimized'>
@@ -85,7 +87,7 @@ layout:
 [^5]: [Age\_Rating Interface](age\_rating.md)
 
     ```typescript
-    export interface Age_Rating {
+    interface Age_Rating {
     	value: string
     	label: string
     	is_adult: boolean
@@ -96,8 +98,39 @@ layout:
 [^6]: [Publish\_Day Interface](publish\_day.md)
 
     ```typescript
-    export interface Publish_Day {
+    interface Publish_Day {
     	value: string
     	description: string
+    }
+    ```
+
+[^7]: [Genre Interface](genre.md)
+
+    ```typescript
+    interface Genre {
+    	id: number
+    	name: string
+    	total_releases: number
+    	image: GenreImage
+    }
+    ```
+
+[^8]: [Episode Interface](episode.md)
+
+    ```typescript
+    interface Episode {
+    	id: string
+    	name: string
+    	ordinal: number
+    	opening: Timing
+    	ending: Timing
+    	preview: Image
+    	hls_480: string
+    	hls_720: string
+    	hls_1080: string
+    	duration: number
+    	updated_at: string
+    	sort_order: number
+    	name_english: string
     }
     ```

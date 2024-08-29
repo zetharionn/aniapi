@@ -12,16 +12,16 @@ layout:
     visible: true
 ---
 
-# search
+# latest
 
-The `Anilibria.random()` is a method that must accept a `query` argument of type `string` and returns an object of type [`Release`](../types/release.md)`[]`.
+The `Anilibria.latest()` is method that must accept a `limit` argument of type `number` and returns an object of type [`Release`](../types/release.md)`[]`.
 
 ## Usage
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
-anilibria.search({
-    query: "That Time I Got Reincarnated as a Slime"
+anilibria.latest({
+    limit: 5
 }).then(res => res)
 ```
 {% endcode %}
@@ -30,4 +30,4 @@ anilibria.search({
 
 | Parameter | Type     | Is Required |
 | --------- | -------- | ----------- |
-| `query`   | `string` | `true`      |
+| `limit`   | `number` | `false`     |

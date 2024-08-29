@@ -4,7 +4,7 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```typescript
-export interface Publish_Day {
+interface Publish_Day {
 	value: string
 	description: string
 }

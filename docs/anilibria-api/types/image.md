@@ -12,5 +12,9 @@ interface Image {
 		thumbnail: string
 	}
 }
+
+type GenreImage = {
+	preview: string
+} & Omit<Image, 'src'>
 ```
 {% endcode %}
