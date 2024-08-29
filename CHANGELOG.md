@@ -1,5 +1,11 @@
 # aniapi
 
+## 0.5.2
+
+### Patch Changes
+
+- 1c3410c: deps version audit
+
 ## 0.5.1
 
 ### Patch Changes
