@@ -1,5 +1,11 @@
 # aniapi
 
+## 0.5.1
+
+### Patch Changes
+
+- f2805a5: tests refactor & types
+
 ## 0.5.0
 
 ### Minor Changes
