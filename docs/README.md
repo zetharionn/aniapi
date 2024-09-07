@@ -40,9 +40,8 @@ AniAPI is **open-source** **lightweight** API wrapper over other APIs of Anime S
 
 ## Contributing
 
-Before creating an issue, make sure it hasn't been reported/suggested yet, check the [documentation](https://zetharionn.gitbook.io/aniapi-docs), [Google it](https://www.google.com/). If you still haven't found a solution, create an issue on the [GitHub Repository](https://github.com/zetharionn/aniapi).
+Before creating an issue, make sure it hasn't been reported/suggested yet, check the [documentation](https://zetharionn.gitbook.io/aniapi-docs), [Google it](https://www.google.com/). If you still haven't found a solution, create an [issue on GitHub Repository](https://github.com/zetharionn/aniapi/issues/new).
 
 ## License
 
 [Zetharion](https://github.com/zetharionn) does not claim all copyrights and related rights of the API used. This project is **open source** and uses the [MIT License](../LICENSE). If you notice a violation of the policy of the API used, please contact [Zetharion](https://github.com/zetharionn).
-
