@@ -8,14 +8,16 @@
 	<img alt="NPM Size" src="https://img.shields.io/bundlejs/size/aniapi?style=for-the-badge">
 </div>
 
-<p align="center" >
+<p align="center">
 	<strong>Lightweight</strong> API wrapper over other Anime Services APIs
 </p>
 
-## Getting Started
-
-Visit [AniAPI Docs](https://zetharionn.gitbook.io/aniapi-docs)
-
-## License
-
-[MIT License](https://github.com/zetharionn/aniapi/blob/main/LICENSE)
+<div align="center">
+	<a href="https://zetharionn.gitbook.io/aniapi-docs/getting-started/installation">Getting Started</a>
+	|
+	<a href="https://zetharionn.gitbook.io/aniapi-docs">Documentation</a>
+	|	
+	<a href="https://github.com/zetharionn/aniapi/.github/CONTRIBUTING.md">Contributing</a>
+	|
+	<a href="https://github.com/zetharionn/aniapi/.github/LICENSE.md">License</a>
+</div>
