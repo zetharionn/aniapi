@@ -17,7 +17,7 @@
 	|
 	<a href="https://zetharionn.gitbook.io/aniapi-docs">Documentation</a>
 	|	
-	<a href="https://github.com/zetharionn/aniapi/.github/CONTRIBUTING.md">Contributing</a>
+	<a href="https://github.com/zetharionn/aniapi/blob/main/.github/CONTRIBUTING.md">Contributing</a>
 	|
-	<a href="https://github.com/zetharionn/aniapi/.github/LICENSE.md">License</a>
+	<a href="https://github.com/zetharionn/aniapi/blob/main/.github/LICENSE.md">License</a>
 </div>
