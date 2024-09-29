@@ -18,9 +18,9 @@
 		"changeset:publish": "changeset publish",
 		"prepare": "husky"
 	},
-	"packageManager": "pnpm@9.11.0",
+	"packageManager": "pnpm@8.15.9",
 	"engines": {
-		"node": "22.x"
+		"node": "20.x"
 	},
 	"source": "src/index.ts",
 	"main": "dist/index.cjs",
