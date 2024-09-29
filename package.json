@@ -7,9 +7,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "parcel watch",
-		"lint": "biome check --write ./src/*.*",
-		"lint:formatter": "biome format --write ./src/*.*",
-		"lint:linter": "biome lint --write ./src/*.*",
+		"lint": "biome check --write ./src/",
+		"lint:formatter": "biome format --write ./src/",
+		"lint:linter": "biome lint --write ./src/",
 		"test": "vitest run",
 		"test:watch": "vitest watch",
 		"build": "parcel build",
