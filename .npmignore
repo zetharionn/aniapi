@@ -23,6 +23,8 @@ tests
 **/.*rc*
 **/*.yml
 **/tsconfig.json
+.github
+biome.json
 
 # Editor directories and files
 .vscode/*
