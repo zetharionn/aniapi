@@ -1,20 +1,20 @@
 import type { IAnilibria } from './anilibria.types'
 import {
-	anilibriaRandom,
-	AnilibriaRandomParams
+	type AnilibriaLatestParams,
+	anilibriaLatest
+} from './methods/anilibriaLatest'
+import {
+	type AnilibriaRandomParams,
+	anilibriaRandom
 } from './methods/anilibriaRandom'
 import {
-	anilibriaSearch,
-	AnilibriaSearchParams
-} from './methods/anilibriaSearch'
-import {
-	anilibriaRelease,
-	AnilibriaReleaseParams
+	type AnilibriaReleaseParams,
+	anilibriaRelease
 } from './methods/anilibriaRelease'
 import {
-	anilibriaLatest,
-	AnilibriaLatestParams
-} from './methods/anilibriaLatest'
+	type AnilibriaSearchParams,
+	anilibriaSearch
+} from './methods/anilibriaSearch'
 
 export class Anilibria implements IAnilibria {
 	public release(params: AnilibriaReleaseParams) {

@@ -1,4 +1,4 @@
-export const enum QueryParamsModes {
+export enum QueryParamsModes {
 	PARAMS = 'PARAMS',
 	QUERY = 'QUERY'
 }

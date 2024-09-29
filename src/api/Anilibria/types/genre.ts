@@ -1,4 +1,4 @@
-import { GenreImage } from './image'
+import type { GenreImage } from './image'
 
 export interface Genre {
 	id: number

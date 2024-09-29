@@ -1,4 +1,4 @@
-export const enum FetchModes {
+export enum FetchModes {
 	JSON = 'JSON',
 	TEXT = 'TEXT'
 }

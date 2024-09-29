@@ -1,4 +1,4 @@
-import { QueryParamsObject } from '../../../../helpers'
+import type { QueryParamsObject } from '../../../../helpers'
 
 export interface AnilibriaSearchParams extends QueryParamsObject {
 	query: string

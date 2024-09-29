@@ -1,11 +1,11 @@
-import { Names } from './names'
-import { Type } from './type'
-import { Season } from './season'
-import { Age_Rating } from './age_rating'
-import { Publish_Day } from './publish_day'
-import { Image } from './image'
-import { Episode } from './episode'
-import { Genre } from './genre'
+import type { Age_Rating } from './age_rating'
+import type { Episode } from './episode'
+import type { Genre } from './genre'
+import type { Image } from './image'
+import type { Names } from './names'
+import type { Publish_Day } from './publish_day'
+import type { Season } from './season'
+import type { Type } from './type'
 
 export interface Release {
 	id: number

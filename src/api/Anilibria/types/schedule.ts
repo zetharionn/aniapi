@@ -1,5 +1,5 @@
-import { Episode } from './episode'
-import { Release } from './release'
+import type { Episode } from './episode'
+import type { Release } from './release'
 
 export interface Schedule {
 	release: Release

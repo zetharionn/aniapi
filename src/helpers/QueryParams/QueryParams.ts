@@ -1,4 +1,4 @@
-import { QueryParamsModes, QueryParamsObject } from './QueryParams.types'
+import { QueryParamsModes, type QueryParamsObject } from './QueryParams.types'
 
 export const QueryParams = <T extends QueryParamsObject>(
 	queryParams?: T,
