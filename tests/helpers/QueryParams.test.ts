@@ -1,5 +1,5 @@
-import { QueryParams, QueryParamsModes } from '../../src/helpers'
 import { describe, expect, test } from 'vitest'
+import { QueryParams, QueryParamsModes } from '../../src/helpers'
 
 describe('QueryParams tests', () => {
 	test('query test', () => {

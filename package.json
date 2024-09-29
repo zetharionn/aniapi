@@ -34,14 +34,7 @@
 	"bugs": {
 		"url": "https://github.com/zetharionn/aniapi/issues"
 	},
-	"keywords": [
-		"tracker",
-		"api",
-		"typescript",
-		"anime",
-		"parcel",
-		"anitrack"
-	],
+	"keywords": ["tracker", "api", "typescript", "anime", "parcel", "anitrack"],
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.2",
 		"@changesets/cli": "^2.27.8",
