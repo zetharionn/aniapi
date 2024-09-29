@@ -1,5 +1,11 @@
 # aniapi
 
+## 0.6.1
+
+### Patch Changes
+
+- dcd5274: bundle size smaller
+
 ## 0.6.0
 
 ### Minor Changes
