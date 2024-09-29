@@ -1,5 +1,11 @@
 # aniapi
 
+## 0.6.0
+
+### Minor Changes
+
+- e61cf06: many fixes, migration to Biome, deps version audit
+
 ## 0.5.2
 
 ### Patch Changes
