@@ -1,4 +1,0 @@
-{
-	"src/**/*.ts": ["pnpm lint"],
-	"test/**/*.test.ts": ["pnpm lint"]
-}
